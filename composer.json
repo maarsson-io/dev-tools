@@ -20,7 +20,7 @@
         "larastan/larastan": "^3.10",
         "maarsson/coding-standard": "^1.0",
         "php": "^8.4",
-        "phpmd/phpmd": "^2.15",
+        "phpmd/phpmd": "^3.0",
         "slevomat/coding-standard": "^8.31",
         "squizlabs/php_codesniffer": "^4.0"
     },
