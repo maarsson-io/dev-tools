@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fa7f5b4a4b99bb5412326b84d59d96ba",
+    "content-hash": "9d22aafc0c52eeedf3815c55e307773c",
     "packages": [
         {
             "name": "amphp/amp",
@@ -3878,25 +3878,31 @@
         },
         {
             "name": "maarsson/coding-standard",
-            "version": "1.3.0",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/maarsson-io/coding-standard.git",
-                "reference": "b1adee98b22eb2608f0ed23359190eb5d1df31cd"
+                "reference": "85a2243398746766e98918521932061c9e156eb1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maarsson-io/coding-standard/zipball/b1adee98b22eb2608f0ed23359190eb5d1df31cd",
-                "reference": "b1adee98b22eb2608f0ed23359190eb5d1df31cd",
+                "url": "https://api.github.com/repos/maarsson-io/coding-standard/zipball/85a2243398746766e98918521932061c9e156eb1",
+                "reference": "85a2243398746766e98918521932061c9e156eb1",
                 "shasum": ""
             },
             "require": {
                 "php": "^8.4"
             },
             "require-dev": {
-                "friendsofphp/php-cs-fixer": "^3.92",
-                "phpmd/phpmd": "^2.15",
-                "slevomat/coding-standard": "^8.26",
+                "friendsofphp/php-cs-fixer": "^3.95",
+                "larastan/larastan": "^3.10",
+                "laravel/framework": "^13.0",
+                "orchestra/testbench-core": "^11.0",
+                "php-parallel-lint/php-parallel-lint": "^1.4",
+                "phpmd/phpmd": "^3.0",
+                "phpro/grumphp": "^2.25",
+                "shipmonk/dead-code-detector": "^1.4",
+                "slevomat/coding-standard": "^8.31",
                 "squizlabs/php_codesniffer": "^4.0"
             },
             "bin": [
@@ -3926,9 +3932,9 @@
             ],
             "support": {
                 "issues": "https://github.com/maarsson-io/coding-standard/issues",
-                "source": "https://github.com/maarsson-io/coding-standard/tree/1.3.0"
+                "source": "https://github.com/maarsson-io/coding-standard/tree/2.0.0"
             },
-            "time": "2026-08-24T12:18:56+00:00"
+            "time": "2026-10-06T12:34:45+00:00"
         },
         {
             "name": "monolog/monolog",
