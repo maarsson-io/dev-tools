@@ -16,12 +16,14 @@
         }
     ],
     "require": {
+        "php": "^8.4",
         "friendsofphp/php-cs-fixer": "^3.95",
         "larastan/larastan": "^3.10",
-        "maarsson/coding-standard": "^1.0",
-        "php": "^8.4",
+        "maarsson/coding-standard": "^2.0",
+        "php-parallel-lint/php-parallel-lint": "^1.4",
         "phpmd/phpmd": "^3.0",
         "phpro/grumphp": "^2.25",
+        "shipmonk/dead-code-detector": "^1.4",
         "slevomat/coding-standard": "^8.31",
         "squizlabs/php_codesniffer": "^4.0"
     },

@@ -76,8 +76,8 @@ info "Running sync script…"
 ./vendor/bin/sync-coding-standards.php
 
 info "Asserting files exist in project root…"
-test -f phpmd.xml || fail "phpmd.xml was not copied to project root"
-test -f phpcs.xml || fail "phpcs.xml was not copied to project root"
+test -f phpmd.yml || fail "phpmd.yml was not copied to project root"
+test -f .phpcs.xml || fail ".phpcs.xml was not copied to project root"
 test -f .php-cs-fixer.php || fail ".php-cs-fixer.php was not copied to project root"
 test -f phpstan.neon || fail "phpstan.neon was not copied to project root"
 
