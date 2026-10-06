@@ -48,6 +48,7 @@ JSON
 
 info "Installing dependencies…"
 composer config --no-plugins allow-plugins.dealerdirect/phpcodesniffer-composer-installer true
+composer config --no-plugins allow-plugins.phpro/grumphp true
 composer install --no-interaction --prefer-dist
 
 info "Asserting PHPMD binary exists…"
