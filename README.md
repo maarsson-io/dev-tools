@@ -49,8 +49,13 @@ By following the installation steps below, the rulesets are automatically applie
 
 Install the package as a development dependency in your project:
 
-`composer require --dev maarsson/dev-tools`
+```sh
+composer config --no-plugins allow-plugins.dealerdirect/phpcodesniffer-composer-installer true
+composer config --no-plugins allow-plugins.phpro/grumphp true
+composer require --dev maarsson/dev-tools
+```
 
+These plugin permissions must be configured in the consuming project's `composer.json`. They are not inherited from this metapackage. The PHPCS installer registers the Slevomat standard, and the GrumPHP plugin installs Git hooks.
 
 ### 2. Project configuration (required)
 
