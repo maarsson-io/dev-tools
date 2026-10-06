@@ -21,6 +21,7 @@
         "maarsson/coding-standard": "^1.0",
         "php": "^8.4",
         "phpmd/phpmd": "^3.0",
+        "phpro/grumphp": "^2.25",
         "slevomat/coding-standard": "^8.31",
         "squizlabs/php_codesniffer": "^4.0"
     },
