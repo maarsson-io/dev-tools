@@ -17,7 +17,7 @@
     ],
     "require": {
         "friendsofphp/php-cs-fixer": "^3.95",
-        "larastan/larastan": "^3.8",
+        "larastan/larastan": "^3.10",
         "maarsson/coding-standard": "^1.0",
         "php": "^8.4",
         "phpmd/phpmd": "^2.15",
