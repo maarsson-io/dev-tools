@@ -26,8 +26,10 @@ Installing this package will pull in:
 
 - `phpmd/phpmd` – [PHP Mess Detector (PHPMD)](https://phpmd.org/) - detect design and complexity issues
 - `squizlabs/php_codesniffer` – [PHP CodeSniffer (PHPCS)](https://github.com/PHPCSStandards/PHP_CodeSniffer/) - detect coding standard violations
+- `slevomat/coding-standard` – [Slevomat Coding Standard](https://github.com/slevomat/coding-standard/) - additional PHPCS checks
 - `friendsofphp/php-cs-fixer` – [PHP CS Fixer](https://cs.symfony.com/) - automatically enforce modern code style
 - `larastan/larastan` – [Larastan](https://github.com/larastan/larastan) - catches both obvious & tricky bugs
+- `phpro/grumphp` – [GrumPHP](https://github.com/phpro/grumphp/) - run configured code-quality checks before commits
 - `maarsson/coding-standard` – [Centralized standards](https://github.com/maarsson-io/coding-standard) - shared coding standards and sync tooling
 
 By following the installation steps below, the rulesets are automatically applied after composer install and composer update in your project. This guarantees that all projects use the exact same ruleset versions.
