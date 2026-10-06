@@ -20,6 +20,7 @@
         "friendsofphp/php-cs-fixer": "^3.95",
         "larastan/larastan": "^3.10",
         "maarsson/coding-standard": "^1.0",
+        "php-parallel-lint/php-parallel-lint": "^1.4",
         "phpmd/phpmd": "^3.0",
         "phpro/grumphp": "^2.25",
         "shipmonk/dead-code-detector": "^1.4",
