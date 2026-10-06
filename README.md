@@ -16,7 +16,7 @@ Development QA toolchain bundle for my projects.
 </div>
 
 > [!NOTE]
-> See also [maarsson/coding-standard](https://github.com/maarsson/coding-standard).
+> See also [maarsson/coding-standard](https://github.com/maarsson-io/coding-standard).
 
 ## About
 
@@ -26,11 +26,13 @@ Installing this package will pull in:
 
 - `phpmd/phpmd` – [PHP Mess Detector (PHPMD)](https://phpmd.org/) - detect design and complexity issues
 - `squizlabs/php_codesniffer` – [PHP CodeSniffer (PHPCS)](https://github.com/PHPCSStandards/PHP_CodeSniffer/) - detect coding standard violations
+- `slevomat/coding-standard` – [Slevomat Coding Standard](https://github.com/slevomat/coding-standard/) - additional PHPCS checks
 - `friendsofphp/php-cs-fixer` – [PHP CS Fixer](https://cs.symfony.com/) - automatically enforce modern code style
 - `larastan/larastan` – [Larastan](https://github.com/larastan/larastan) - catches both obvious & tricky bugs
-- `maarsson/coding-standard` – [Centralized standards](https://github.com/maarsson/coding-standard/tree/master) - shared coding standards and sync tooling
+- `phpro/grumphp` – [GrumPHP](https://github.com/phpro/grumphp/) - run configured code-quality checks before commits
+- `maarsson/coding-standard` – [Centralized standards](https://github.com/maarsson-io/coding-standard) - shared coding standards and sync tooling
 
-By following the installation steps below, the rulesets are automatically applied after composer install and composer update in your project. This guarantees that all projects use the exact same ruleset versions.
+By following the installation steps below, the rulesets from the installed version of `maarsson/coding-standard` are automatically applied after `composer install` and `composer update` in your project. This guarantees that all projects use the exact same ruleset versions.
 
 ---
 
@@ -47,8 +49,13 @@ By following the installation steps below, the rulesets are automatically applie
 
 Install the package as a development dependency in your project:
 
-`composer require --dev maarsson/dev-tools`
+```sh
+composer config --no-plugins allow-plugins.dealerdirect/phpcodesniffer-composer-installer true
+composer config --no-plugins allow-plugins.phpro/grumphp true
+composer require --dev maarsson/dev-tools
+```
 
+These plugin permissions must be configured in the consuming project's `composer.json`. They are not inherited from this metapackage. The PHPCS installer registers the Slevomat standard, and the GrumPHP plugin installs Git hooks.
 
 ### 2. Project configuration (required)
 
@@ -94,7 +101,7 @@ With this setup, the coding standards are applied automatically.
 
 ## Usage
 
-For more info please read the `maarsson/coding-standard` package's [readme](https://github.com/maarsson/coding-standard/blob/master/README.md).
+For more info please read the `maarsson/coding-standard` package's [readme](https://github.com/maarsson-io/coding-standard#readme).
 
 ---
 
