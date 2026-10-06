@@ -32,7 +32,7 @@ Installing this package will pull in:
 - `phpro/grumphp` – [GrumPHP](https://github.com/phpro/grumphp/) - run configured code-quality checks before commits
 - `maarsson/coding-standard` – [Centralized standards](https://github.com/maarsson-io/coding-standard) - shared coding standards and sync tooling
 
-By following the installation steps below, the rulesets are automatically applied after composer install and composer update in your project. This guarantees that all projects use the exact same ruleset versions.
+By following the installation steps below, the rulesets from the installed version of `maarsson/coding-standard` are automatically applied after `composer install` and `composer update` in your project. This guarantees that all projects use the exact same ruleset versions.
 
 ---
 
