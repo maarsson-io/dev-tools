@@ -2,12 +2,18 @@
     "name": "maarsson/dev-tools",
     "description": "Development QA toolchain bundle for my projects",
     "type": "metapackage",
-    "license": "MIT",
     "keywords": [
         "qa",
         "dev",
         "tools",
         "standards"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "VMaarsson",
+            "email": "viktor@maarsson.io"
+        }
     ],
     "require": {
         "php": "^8.4",
@@ -17,11 +23,5 @@
         "slevomat/coding-standard": "^8.26",
         "friendsofphp/php-cs-fixer": "^3.92",
         "larastan/larastan": "^3.8"
-    },
-    "authors": [
-        {
-            "name": "VMaarsson",
-            "email": "viktor@maarsson.se"
-        }
-    ]
+    }
 }
