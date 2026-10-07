@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9d22aafc0c52eeedf3815c55e307773c",
+    "content-hash": "e63a1a85623d6a7912e7b1428fb83e5f",
     "packages": [
         {
             "name": "amphp/amp",
@@ -3878,16 +3878,16 @@
         },
         {
             "name": "maarsson/coding-standard",
-            "version": "2.0.0",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/maarsson-io/coding-standard.git",
-                "reference": "85a2243398746766e98918521932061c9e156eb1"
+                "reference": "8f75c3d3bbc699ccc7e557be1a61beee71d8f989"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maarsson-io/coding-standard/zipball/85a2243398746766e98918521932061c9e156eb1",
-                "reference": "85a2243398746766e98918521932061c9e156eb1",
+                "url": "https://api.github.com/repos/maarsson-io/coding-standard/zipball/8f75c3d3bbc699ccc7e557be1a61beee71d8f989",
+                "reference": "8f75c3d3bbc699ccc7e557be1a61beee71d8f989",
                 "shasum": ""
             },
             "require": {
@@ -3932,9 +3932,9 @@
             ],
             "support": {
                 "issues": "https://github.com/maarsson-io/coding-standard/issues",
-                "source": "https://github.com/maarsson-io/coding-standard/tree/2.0.0"
+                "source": "https://github.com/maarsson-io/coding-standard/tree/2.1.0"
             },
-            "time": "2026-10-06T12:34:45+00:00"
+            "time": "2026-10-07T19:19:44+00:00"
         },
         {
             "name": "monolog/monolog",
