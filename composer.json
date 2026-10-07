@@ -27,6 +27,17 @@
         "slevomat/coding-standard": "^8.31",
         "squizlabs/php_codesniffer": "^4.0"
     },
+    "extra": {
+        "frontend-tools": {
+            "@eslint/js": "^10.0.1",
+            "@stylistic/eslint-plugin": "^5.10.0",
+            "eslint": "^10.12.0",
+            "eslint-plugin-vue": "^10.11.1",
+            "globals": "^17.13.0",
+            "typescript": "^6.0.3",
+            "typescript-eslint": "^8.71.1"
+        }
+    },
     "config": {
         "sort-packages": true
     }
