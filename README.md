@@ -34,12 +34,15 @@ Installing this package will pull in:
 
 By following the installation steps below, the rulesets from the installed version of `maarsson/coding-standard` are automatically applied after `composer install` and `composer update` in your project. This guarantees that all projects use the exact same ruleset versions.
 
+The `extra.frontend-tools` setting defines the npm dependencies for ESLint, including Stylistic, TypeScript, and Vue support. The coding-standard sync script adds them to the consuming project's `devDependencies` and creates the `eslint` and `eslint:fix` scripts.
+
 ---
 
 ## Requirements
 
 - PHP ^8.4
 - Composer
+- For ESLint: npm and Node.js `^20.19.0 || ^22.13.0 || >=24`
 
 ---
 
@@ -51,7 +54,7 @@ Install the package as a development dependency in your project:
 
 ```sh
 composer config --no-plugins allow-plugins.dealerdirect/phpcodesniffer-composer-installer true
-composer config --no-plugins allow-plugins.phpro/grumphp true
+composer config --no-plugins allow-plugins.phpro/grumphp false
 composer require --dev maarsson/dev-tools
 ```
 
@@ -96,6 +99,20 @@ Extend your project’s `composer.json` scripts section to include:
 ```
 
 With this setup, the coding standards are applied automatically.
+
+#### 2.3. Install the frontend tools
+
+Composer install/update synchronizes `package.json` but does not install npm packages. The sync script displays a reminder when it updates `package.json`.
+
+After the initial sync, and whenever a toolchain update changes the npm dependencies, install them manually in the consuming project:
+
+```sh
+npm install --ignore-scripts
+```
+
+Commit the resulting `package.json` and `package-lock.json` together.
+
+In CI, run `npm ci --ignore-scripts` after Composer installation to install from the committed lockfile.
 
 ---
 
