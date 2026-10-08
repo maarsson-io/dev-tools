@@ -34,7 +34,7 @@ Installing this package will pull in:
 
 By following the installation steps below, the rulesets from the installed version of `maarsson/coding-standard` are automatically applied after `composer install` and `composer update` in your project. This guarantees that all projects use the exact same ruleset versions.
 
-The `extra.frontend-tools` setting defines the npm dependencies for ESLint, including Stylistic, TypeScript, and Vue support. The coding-standard sync script adds them to the consuming project's `devDependencies` and creates the `eslint` and `eslint:fix` scripts.
+The `extra.frontend-tools` setting defines the npm dependencies for ESLint including Stylistic, Stylelint, TypeScript, Vue, SCSS, and Tailwind support. The coding-standard sync script adds them to the consuming project's `devDependencies` and creates the `eslint`, `eslint:fix`, `stylelint`, and `stylelint:fix` scripts.
 
 ---
 
@@ -42,7 +42,7 @@ The `extra.frontend-tools` setting defines the npm dependencies for ESLint, incl
 
 - PHP ^8.4
 - Composer
-- For ESLint: npm and Node.js `^20.19.0 || ^22.13.0 || >=24`
+- For the frontend tools: npm and Node.js `^22.13.0 || >=24`
 
 ---
 
