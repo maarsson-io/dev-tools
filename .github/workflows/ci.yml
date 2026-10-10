@@ -19,6 +19,9 @@ jobs:
           php-version: '8.4'
           tools: composer
 
+      - name: Validate Composer configuration
+        run: composer validate --strict --no-plugins
+
       - name: Prepare path repo for consumer test
         run: |
           rm -rf /tmp/dev-tools-consumer-smoke
