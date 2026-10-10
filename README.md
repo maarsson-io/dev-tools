@@ -7,7 +7,7 @@ Development QA toolchain bundle for my projects.
 
 [![Latest Stable Version](https://img.shields.io/github/v/release/maarsson/dev-tools?label=Latest)](https://github.com/maarsson/dev-tools/releases)
 ![Minimum PHP Version](https://img.shields.io/packagist/dependency-v/maarsson/dev-tools/php.svg)
-[![Tested on PHP 8,4 to 8.5](https://img.shields.io/badge/tested%20on-PHP%208.4%20|%208.5-brightgreen.svg?maxAge=2419200)][GHA-test]
+[![Tested on PHP 8.4 to 8.5](https://img.shields.io/badge/tested%20on-PHP%208.4%20|%208.5-brightgreen.svg?maxAge=2419200)][GHA-test]
 [![Test](https://github.com/maarsson/dev-tools/actions/workflows/ci.yml/badge.svg?branch=master)][GHA-test]
 [![License](https://img.shields.io/github/license/maarsson/dev-tools)](https://github.com/maarsson/dev-tools/blob/master/LICENSE)
 
@@ -40,7 +40,7 @@ The `extra.frontend-tools` setting defines the npm dependencies for ESLint inclu
 
 ## Requirements
 
-- PHP ^8.4
+- PHP `>=8.4 <8.6`
 - Composer
 - For the frontend tools: npm and Node.js `^22.13.0 || >=24`
 

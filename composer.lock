@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1af78bafc47238be353e20a8cf64e5d6",
+    "content-hash": "3c34c3a5925d749ee5ec7131c90fda88",
     "packages": [
         {
             "name": "amphp/amp",
@@ -3878,20 +3878,20 @@
         },
         {
             "name": "maarsson/coding-standard",
-            "version": "2.3.0",
+            "version": "2.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/maarsson-io/coding-standard.git",
-                "reference": "c81f687eb4c2993ccf6c63a91e02c3d87d93b500"
+                "reference": "8e7ff2a395dc52189aecc83ae3d17b8aabee2437"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maarsson-io/coding-standard/zipball/c81f687eb4c2993ccf6c63a91e02c3d87d93b500",
-                "reference": "c81f687eb4c2993ccf6c63a91e02c3d87d93b500",
+                "url": "https://api.github.com/repos/maarsson-io/coding-standard/zipball/8e7ff2a395dc52189aecc83ae3d17b8aabee2437",
+                "reference": "8e7ff2a395dc52189aecc83ae3d17b8aabee2437",
                 "shasum": ""
             },
             "require": {
-                "php": "^8.4"
+                "php": ">=8.4 <8.6"
             },
             "require-dev": {
                 "friendsofphp/php-cs-fixer": "^3.95",
@@ -3933,9 +3933,9 @@
             ],
             "support": {
                 "issues": "https://github.com/maarsson-io/coding-standard/issues",
-                "source": "https://github.com/maarsson-io/coding-standard/tree/2.3.0"
+                "source": "https://github.com/maarsson-io/coding-standard/tree/2.3.1"
             },
-            "time": "2026-10-10T19:19:16+00:00"
+            "time": "2026-10-10T20:27:32+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -9477,7 +9477,7 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": "^8.4"
+        "php": ">=8.4 <8.6"
     },
     "platform-dev": {},
     "plugin-api-version": "2.9.0"

@@ -66,6 +66,9 @@ test -x ./vendor/bin/phpstan || fail "LARASTAN binary missing"
 info "Asserting sync script exists…"
 test -x ./vendor/bin/sync-coding-standards.php || fail "sync-coding-standards.php script missing"
 
+info "Asserting debug statement check script exists…"
+test -x ./vendor/bin/check-debug-statements.php || fail "check-debug-statements.php script missing"
+
 info "Printing tool versions…"
 ./vendor/bin/phpmd --version
 ./vendor/bin/phpcs --version
@@ -80,5 +83,18 @@ test -f phpmd.yml || fail "phpmd.yml was not copied to project root"
 test -f .phpcs.xml || fail ".phpcs.xml was not copied to project root"
 test -f .php-cs-fixer.php || fail ".php-cs-fixer.php was not copied to project root"
 test -f phpstan.neon || fail "phpstan.neon was not copied to project root"
+test -f grumphp.yml || fail "grumphp.yml was not copied to project root"
+
+info "Asserting the debug statement check runs with the installed GrumPHP…"
+git init -q
+printf "export const value = 1;\n" > clean.js
+git add clean.js
+./vendor/bin/check-debug-statements.php || fail "Debug statement check failed for clean files"
+printf "console.log('debug');\n" > debug.js
+git add debug.js
+if ./vendor/bin/check-debug-statements.php > debug-check.log 2>&1; then
+  fail "Debug statement check should fail for a tracked debug statement"
+fi
+grep -Fq 'debug.js' debug-check.log || fail "Debug statement was not reported"
 
 ok "Consumer smoke test passed."
