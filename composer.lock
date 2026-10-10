@@ -3878,16 +3878,16 @@
         },
         {
             "name": "maarsson/coding-standard",
-            "version": "2.2.0",
+            "version": "2.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/maarsson-io/coding-standard.git",
-                "reference": "cea74f2bdc4fada0bfb0c9ec2a4e4b20a434c57e"
+                "reference": "c81f687eb4c2993ccf6c63a91e02c3d87d93b500"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maarsson-io/coding-standard/zipball/cea74f2bdc4fada0bfb0c9ec2a4e4b20a434c57e",
-                "reference": "cea74f2bdc4fada0bfb0c9ec2a4e4b20a434c57e",
+                "url": "https://api.github.com/repos/maarsson-io/coding-standard/zipball/c81f687eb4c2993ccf6c63a91e02c3d87d93b500",
+                "reference": "c81f687eb4c2993ccf6c63a91e02c3d87d93b500",
                 "shasum": ""
             },
             "require": {
@@ -3906,6 +3906,7 @@
                 "squizlabs/php_codesniffer": "^4.0"
             },
             "bin": [
+                "bin/check-debug-statements.php",
                 "bin/sync-coding-standards.php"
             ],
             "type": "library",
@@ -3932,9 +3933,9 @@
             ],
             "support": {
                 "issues": "https://github.com/maarsson-io/coding-standard/issues",
-                "source": "https://github.com/maarsson-io/coding-standard/tree/2.2.0"
+                "source": "https://github.com/maarsson-io/coding-standard/tree/2.3.0"
             },
-            "time": "2026-10-08T06:18:38+00:00"
+            "time": "2026-10-10T19:19:16+00:00"
         },
         {
             "name": "monolog/monolog",
