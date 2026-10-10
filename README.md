@@ -64,43 +64,9 @@ These plugin permissions must be configured in the consuming project's `composer
 
 To ensure the coding standards are applied automatically, you must configure Composer scripts in the target project.
 
-#### 2.1. Add a named sync script
+Follow the [coding-standard Composer hook configuration](https://github.com/maarsson-io/coding-standard#2-project-configuration-required), including its conditional `coding-standard:sync` script. The condition skips synchronization during `--no-dev` installs and updates, when the development tools and sync executable are absent.
 
-In your project’s `composer.json` add:
-
-```json
-{
-  "scripts": {
-    "coding-standard:sync": [
-      "vendor/bin/sync-coding-standards.php"
-    ]
-  }
-}
-```
-
-#### 2.2. Run the sync script on install and update
-
-Extend your project’s `composer.json` scripts section to include:
-
-```json
-{
-  "scripts": {
-    "coding-standard:sync": [
-      "vendor/bin/sync-coding-standards.php"
-    ],
-    "post-install-cmd": [
-      "@coding-standard:sync"
-    ],
-    "post-update-cmd": [
-      "@coding-standard:sync"
-    ]
-  }
-}
-```
-
-With this setup, the coding standards are applied automatically.
-
-#### 2.3. Install the frontend tools
+#### Install the frontend tools
 
 Composer install/update synchronizes `package.json` but does not install npm packages. The sync script displays a reminder when it updates `package.json`.
 
